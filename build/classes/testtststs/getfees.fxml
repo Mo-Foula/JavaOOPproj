@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="340.0" prefWidth="410.0" style="-fx-background-color: linear-gradient(to bottom,white,#03b790);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testtststs.GetfeesController">
+   <children>
+      <AnchorPane layoutX="-468.0" layoutY="-299.0" prefHeight="907.0" prefWidth="1327.0" style="-fx-background-color: linear-gradient(to bottom,white,#03b790);">
+         <children>
+            <Circle fill="#f0f0f0" layoutX="396.0" layoutY="459.0" opacity="0.15" radius="122.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fill="#f0f0f0" layoutX="274.0" layoutY="272.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.21" radius="195.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fill="#f0f0f0" layoutX="629.0" layoutY="282.0" opacity="0.22" radius="212.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fill="#f0f0f0" layoutX="79.0" layoutY="119.0" opacity="0.15" radius="122.0" stroke="WHITE" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+      <TextField fx:id="textcode" layoutX="157.0" layoutY="43.0" />
+      <Label layoutX="70.0" layoutY="137.0" prefHeight="35.0" prefWidth="58.0" text="Fees:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="FeesLbl" layoutX="124.0" layoutY="139.0" prefHeight="25.0" prefWidth="149.0" textFill="#35217c">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Line endX="51.0" endY="191.0" layoutX="77.0" layoutY="-7.0" startX="191.0" startY="191.0" />
+      <Circle fill="#f0f0f0" layoutX="406.0" layoutY="469.0" opacity="0.15" radius="122.0" stroke="WHITE" strokeType="INSIDE" />
+      <Circle fill="#f0f0f0" layoutX="284.0" layoutY="282.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.21" radius="195.0" stroke="WHITE" strokeType="INSIDE" />
+      <Circle fill="#f0f0f0" layoutX="640.0" layoutY="292.0" opacity="0.22" radius="212.0" stroke="WHITE" strokeType="INSIDE" />
+      <Circle fill="#f0f0f0" layoutX="89.0" layoutY="129.0" opacity="0.15" radius="122.0" stroke="WHITE" strokeType="INSIDE" />
+      <Button layoutX="157.0" layoutY="238.0" mnemonicParsing="false" onAction="#RemovePatient" text="Calculate" />
+      <TextField fx:id="textdays" layoutX="157.0" layoutY="87.0" />
+      <Label layoutX="31.0" layoutY="82.0" prefHeight="35.0" prefWidth="185.0" text="Days spent :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="38.0" prefHeight="35.0" prefWidth="185.0" text="Patient name:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
