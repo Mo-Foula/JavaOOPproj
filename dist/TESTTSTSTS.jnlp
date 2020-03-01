@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="TESTTSTSTS.jnlp">
+  <information>
+    <title>TESTTSTSTS</title>
+    <vendor>Mohamed Foula</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="TESTTSTSTS.jar" size="999663" download="eager" />
+    <jar href="lib\ojdbc6.jar" size="2739670" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="testtststs.TESTTSTSTS"  name="TESTTSTSTS" />
+  <update check="always"/>
+</jnlp>
