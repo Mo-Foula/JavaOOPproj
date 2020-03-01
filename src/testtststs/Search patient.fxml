@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="198.0" prefWidth="1220.0" style="-fx-background-color: linear-gradient(to bottom,white,#03b790);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testtststs.SearchPatientController">
+   <children>
+      <AnchorPane layoutX="-4.0" layoutY="-7.0" prefHeight="615.0" prefWidth="863.0" style="-fx-background-color: linear-gradient(to bottom,white,#03b790);">
+         <children>
+            <Circle fill="#f0f0f0" layoutX="396.0" layoutY="459.0" opacity="0.15" radius="122.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fill="#f0f0f0" layoutX="274.0" layoutY="272.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.21" radius="195.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fill="#f0f0f0" layoutX="821.0" layoutY="282.0" opacity="0.22" radius="403.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fill="#f0f0f0" layoutX="79.0" layoutY="119.0" opacity="0.15" radius="122.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fill="#f0f0f0" layoutX="544.0" layoutY="87.0" opacity="0.22" radius="212.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fill="#f0f0f0" layoutX="269.0" layoutY="91.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.21" radius="195.0" stroke="WHITE" strokeType="INSIDE" />
+            <Button layoutX="646.0" layoutY="52.0" mnemonicParsing="false" onAction="#search" text="search" />
+         </children>
+      </AnchorPane>
+      <TextField fx:id="txt" layoutX="461.0" layoutY="49.0" />
+      <Label layoutX="353.0" layoutY="52.0" prefHeight="20.0" prefWidth="108.0" text="Search Patient:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tv" layoutX="4.0" layoutY="108.0" prefHeight="90.0" prefWidth="1226.0" style="-fx-background-color: linear-gradient(to bottom,white,#03b790);">
+         <columns>
+            <TableColumn fx:id="C1name" prefWidth="237.0" text="Name" />
+            <TableColumn fx:id="C2ID" minWidth="0.0" prefWidth="114.0" text="ID" />
+            <TableColumn fx:id="C3Code" prefWidth="96.80001831054688" text="Code" />
+            <TableColumn fx:id="C4Address" prefWidth="236.00006103515625" text="Address" />
+            <TableColumn fx:id="C5age" prefWidth="52.7999267578125" text="Age" />
+            <TableColumn fx:id="C6casetype" prefWidth="104.7999267578125" text="Casetype" />
+            <TableColumn fx:id="C7dr" minWidth="0.0" prefWidth="203.2000732421875" text="Doctor" />
+            <TableColumn fx:id="C8room" prefWidth="64.7999267578125" text=" Room" />
+         </columns>
+      </TableView>
+      <Circle fill="#f0f0f0" layoutX="406.0" layoutY="469.0" opacity="0.15" radius="122.0" stroke="WHITE" strokeType="INSIDE" />
+      <Circle fill="#f0f0f0" layoutX="89.0" layoutY="129.0" opacity="0.15" radius="122.0" stroke="WHITE" strokeType="INSIDE" />
+   </children>
+</AnchorPane>

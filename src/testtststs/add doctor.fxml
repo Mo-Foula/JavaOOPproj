@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="639.0" prefWidth="701.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testtststs.AddDoctorController">
+   <children>
+      <AnchorPane layoutX="2.0" layoutY="-3.0" prefHeight="639.0" prefWidth="701.0" style="-fx-background-color: linear-gradient(to bottom,white,#03b790);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Circle fill="#f0f0f0" layoutX="325.0" layoutY="512.0" opacity="0.15" radius="122.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fill="#f0f0f0" layoutX="184.0" layoutY="354.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.21" radius="195.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fill="#f0f0f0" layoutX="570.0" layoutY="400.0" opacity="0.22" radius="200.0" stroke="WHITE" strokeType="INSIDE" />
+            <Label layoutX="201.0" layoutY="124.0" opacity="0.89" prefHeight="40.0" prefWidth="106.0" text="Name">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="0.89">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.6068702144477204">
+                     <stops>
+                        <Stop color="#413939" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="200.0" layoutY="175.0" prefHeight="30.0" prefWidth="86.0" text="ID">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="dage" layoutX="385.0" layoutY="412.0" />
+            <Circle fill="#f0f0f0" layoutX="111.0" layoutY="532.0" opacity="0.15" radius="122.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fill="#f0f0f0" layoutX="299.0" layoutY="366.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.21" radius="195.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fill="#f0f0f0" layoutX="481.0" layoutY="154.0" opacity="0.22" radius="200.0" stroke="WHITE" strokeType="INSIDE" />
+            <Label layoutX="197.0" layoutY="364.0" prefHeight="30.0" prefWidth="86.0" text="Salary">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="295.0" layoutY="499.0" mnemonicParsing="false" onAction="#insert" prefHeight="40.0" prefWidth="106.0" text="Add" />
+         </children>
+      </AnchorPane>
+      <TextField fx:id="dsalary" layoutX="385.0" layoutY="370.0" />
+      <Label layoutX="284.0" layoutY="61.0" prefHeight="40.0" prefWidth="166.0" text="Add Doctor">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="199.0" layoutY="408.0" prefHeight="30.0" prefWidth="70.0" text="Age">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label" layoutX="156.0" layoutY="150.0" minHeight="16" minWidth="69" />
+      <Label layoutX="199.0" layoutY="221.0" prefHeight="40.0" prefWidth="106.0" text="Code">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="198.0" layoutY="272.0" prefHeight="30.0" prefWidth="106.0" text="Address">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="dname" layoutX="389.0" layoutY="136.0" />
+      <TextField fx:id="did" layoutX="389.0" layoutY="185.0" />
+      <TextField fx:id="dcode" layoutX="388.0" layoutY="231.0" />
+      <TextField fx:id="daddress" layoutX="387.0" layoutY="279.0" />
+      <Label layoutX="197.0" layoutY="319.0" prefHeight="26.0" prefWidth="115.0" text="Speciality">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="dspeciality" layoutX="386.0" layoutY="328.0" />
+   </children>
+</AnchorPane>
